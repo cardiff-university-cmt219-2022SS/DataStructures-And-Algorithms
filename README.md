@@ -9,7 +9,7 @@ If you read this file, means you probably already take part in this project or o
 The most important thing that create a branch for yourself. After clone this repository, please switch branch to your own branch and do not change other's branch.
 ```shell
 # you can use this command to switch branch
-git checkout <branch name>
+git switch -c <branch name>
 ```
 
 The second thing is I hope this is a peaceful, opensource and vibrant community. If anyone has any problem about technology or course, please feel free to ask via raise a new Issue. If you have any idea on issues raised by others, please feel free to leave your understanding under the issue
