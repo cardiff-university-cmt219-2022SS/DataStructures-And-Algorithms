@@ -6,8 +6,8 @@ package cn.allwayz.Algorithm.search;
  */
 public class BinarySearchDemo {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        System.out.println(binarySearch(0, array.length, 7, array));
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+        System.out.println(binarySearch(0, array.length - 1, 1, array));
     }
 
     /**
@@ -22,7 +22,10 @@ public class BinarySearchDemo {
      * 需要结束递归的条件：
      * 找到对应的数字就结束递归
      * 递归完整个数组，仍然没有找到数字，也需要结束递归。leftIndex>rightIndex
-     * TODO:未完成
+     *
+     * @param leftIndex
+     * @param rightIndex
+     * @param findValue
      * @param array
      * @return
      */
@@ -31,13 +34,13 @@ public class BinarySearchDemo {
             return -1;
         }
         int midIndex = (leftIndex + rightIndex) / 2;
+        int floatMid = leftIndex + ((rightIndex - leftIndex) * (findValue - array[leftIndex]) / (array[rightIndex] - array[leftIndex]));
         if (array[midIndex] < findValue) {
-            binarySearch(midIndex, rightIndex, findValue, array);
+            return binarySearch(midIndex, rightIndex, findValue, array);
         } else if (array[midIndex] > findValue) {
-            binarySearch(0, midIndex, findValue, array);
+            return binarySearch(0, midIndex, findValue, array);
         } else {
             return midIndex;
         }
-        return -1;
     }
 }
