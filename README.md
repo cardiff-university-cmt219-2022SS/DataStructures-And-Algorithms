@@ -3,6 +3,11 @@
 .
 ├── Algorithm
 │   ├── PrimeNumber.java
+│   ├── search
+│   │   ├── BinarySearchDemo.java
+│   │   ├── FibonacciSearchDemo.java
+│   │   ├── InterpolationSearchDemo.java
+│   │   └── LinearSearchDemo.java
 │   └── sort
 │       ├── BubbleSortDemo.java
 │       ├── InsertionSortDemo.java
@@ -13,6 +18,8 @@
 │       ├── ShellSortDemo.java
 │       └── SortAlgorithmStarter.java
 ├── DataStructures
+│   ├── HashTable
+│   │   └── HashTableDemo.java
 │   ├── LinkedList
 │   │   ├── CircularLinkedListDemo.java
 │   │   ├── DoubleLinkedListDemo.java
@@ -34,10 +41,17 @@
 ├── Learning
 │   ├── Week1
 │   │   └── Exercise1.java
-│   └── Week2
-│       └── Exercise.java
+│   ├── Week2
+│   │   └── Exercise.java
+│   └── lastYearSource
+│       ├── 1.pdf
+│       ├── 2.pdf
+│       ├── 3.pdf
+│       ├── 4.pdf
+│       └── 5.pdf
 └── MultiThread
     └── ThreadDemo.java
+
 
 ```
 
