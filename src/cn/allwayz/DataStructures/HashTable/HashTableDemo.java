@@ -19,6 +19,8 @@ public class HashTableDemo {
      */
     public static void main(String[] args) {
         Hashtable hashtable = new Hashtable();
+        Employee employee = new Employee(0,"allwayz");
+        System.out.println();
     }
 }
 
@@ -33,7 +35,8 @@ class Employee {
     public int id;
     public String name;
     public Employee next;
-    public Employee(int id, String name){
+
+    public Employee(int id, String name) {
         super();
         this.id = id;
         this.name = name;
@@ -46,24 +49,27 @@ class Employee {
 }
 
 /**
- * add(Employee)
- * list()
- * find(int id)
- * delete(int id)
+ * add(Employee)<br>
+ * list()<br>
+ * find(int id)<br>
+ * delete(int id)<br>
  */
-class EmployeeLinkedList{
+class EmployeeLinkedList {
     private Employee head;
 
-    public void add(Employee employee){
+    public void add(Employee employee) {
 
     }
-    public void list(){
+
+    public void list() {
 
     }
-    public void find(int id){
+
+    public void find(int id) {
 
     }
-    public void delete(int id){
+
+    public void delete(int id) {
 
     }
 }
