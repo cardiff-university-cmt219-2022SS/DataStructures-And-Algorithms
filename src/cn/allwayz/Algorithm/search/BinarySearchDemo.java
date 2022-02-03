@@ -34,7 +34,6 @@ public class BinarySearchDemo {
             return -1;
         }
         int midIndex = (leftIndex + rightIndex) / 2;
-        int floatMid = leftIndex + ((rightIndex - leftIndex) * (findValue - array[leftIndex]) / (array[rightIndex] - array[leftIndex]));
         if (array[midIndex] < findValue) {
             return binarySearch(midIndex, rightIndex, findValue, array);
         } else if (array[midIndex] > findValue) {
