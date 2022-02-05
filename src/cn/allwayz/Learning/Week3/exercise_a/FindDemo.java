@@ -1,7 +1,6 @@
 package cn.allwayz.Learning.Week3.exercise_a;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -11,7 +10,6 @@ import java.io.IOException;
  */
 public class FindDemo {
     public static void main(String[] args) {
-        System.out.println(args.toString());
         String k = args[1];
         String keyWord = "Godfather";
         try {
