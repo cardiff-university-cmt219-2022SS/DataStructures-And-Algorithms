@@ -21,7 +21,7 @@ import java.util.Map;
  *         <li>接口   (interface)</li>
  *         <li>数组   ([])</li>
  *     </ul>
- *
+ * <p>
  * 数据结构：
  *  <table>
  *      <tr>
@@ -34,7 +34,7 @@ import java.util.Map;
  *      </tr>
  *  </table>
  *  <br>
- *
+ * <p>
  * Java 高级
  *      <ol>
  *          <li>关键字: Atomic，Volatile</li>
@@ -48,7 +48,7 @@ import java.util.Map;
  */
 public class Concept {
     /**
-     *<b>1. Use of Identifier</b>
+     * <b>1. Use of Identifier</b>
      * <hr>
      * <b>标识符：凡是自已可以起名字的地方都叫标识符</b>
      * <ul>
@@ -73,10 +73,26 @@ public class Concept {
      *     <li>常量名：所有字母都大写。多单词时每个单词用下划线连接：XXX_YYY_ZZZ</li>
      *
      * </ul>
+     *
      * @param args
      */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println(Math.pow(2,8));
+        int[] nums = {3, 2, 4};
+        int target = 6;
+        int[] res = new int[2];
+        for (int i = 0; i < nums.length; i++) {
+            res[0] = i;
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    res[1] = j;
+                    break;
+                }
+            }
+            if (res[1] != 0){
+                break;
+            }
+        }
+
+        System.out.println(res[0] +""+ res[1]);
     }
 }
