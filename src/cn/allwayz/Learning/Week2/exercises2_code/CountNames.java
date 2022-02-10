@@ -1,5 +1,7 @@
 package cn.allwayz.Learning.Week2.exercises2_code;
 
+import java.util.Locale;
+
 /**
  * (a). Modify the application so that it counts the number of actors whose names end in Jones.<br>
  * <p>
@@ -20,16 +22,19 @@ public class CountNames {
             // (b)
             String name = names[i].toLowerCase();
             if (name.substring(name.length() - 5, name.length()).equals(endWith)) {
-                System.out.println(i);
+                System.out.println(name);
                 count++;
             }
         }
         System.out.println(count);
-
-
+        count = 0;
         for (String name : names) {
-            System.out.println(name);
+            if(name.toLowerCase().endsWith("jones")){
+                System.out.println(name);
+                count++;
+            }
         }
+        System.out.println(count);
     }
 }
 
