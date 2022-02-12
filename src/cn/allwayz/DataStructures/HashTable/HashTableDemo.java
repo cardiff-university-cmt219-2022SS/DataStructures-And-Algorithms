@@ -19,15 +19,46 @@ public class HashTableDemo {
      */
     public static void main(String[] args) {
         Hashtable hashtable = new Hashtable();
-        Employee employee = new Employee(0,"allwayz");
+        Employee employee = new Employee(0, "allwayz");
         System.out.println();
     }
 }
 
 /**
- * 数组 + 链表实现
+ * 数组 + 链表实现<br>
+ * 管理多条链表
  */
 class HashTable {
+    private EmployeeLinkedList[] employeeLinkedLists;
+    private int size;
+
+    public HashTable(int size) {
+        this.size = size;
+        employeeLinkedLists = new EmployeeLinkedList[size];
+        // 初始化每个链表
+        for (int i = 0; i < size; i++) {
+            employeeLinkedLists[i] = new EmployeeLinkedList();
+        }
+    }
+
+    public void add(Employee employee) {
+        // 根据员工的ID得到该员工应该添加到哪一条链表
+        employeeLinkedLists[hash(employee.id)].add(employee);
+    }
+
+    public void list() {
+        for (int i = 0; i < size; i++) {
+            employeeLinkedLists[i].list();
+        }
+    }
+
+    public Employee find(int id) {
+        return employeeLinkedLists[hash(id)].find(id);
+    }
+
+    public int hash(int id) {
+        return id % size;
+    }
 
 }
 
@@ -58,15 +89,42 @@ class EmployeeLinkedList {
     private Employee head;
 
     public void add(Employee employee) {
-
+        if (head == null) {
+            head = employee;
+            return;
+        }
+        Employee temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        temp.next = employee;
     }
 
     public void list() {
-
+        if (head == null) {
+            System.out.println("LinkedList is Empty.");
+            return;
+        }
+        Employee temp = head;
+        while (temp.next != null) {
+            temp.toString();
+            temp = temp.next;
+        }
     }
 
-    public void find(int id) {
-
+    public Employee find(int id) {
+        if (head == null) {
+            System.out.println("LinkedList is Empty.");
+            return null;
+        }
+        Employee temp = head;
+        while (temp.next != null) {
+            if (temp.id == id) {
+                break;
+            }
+            temp = temp.next;
+        }
+        return temp;
     }
 
     public void delete(int id) {
