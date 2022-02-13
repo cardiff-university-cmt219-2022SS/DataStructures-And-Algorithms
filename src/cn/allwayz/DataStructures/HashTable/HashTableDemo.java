@@ -1,7 +1,6 @@
 package cn.allwayz.DataStructures.HashTable;
 
-import java.util.Hashtable;
-import java.util.LinkedList;
+import java.util.Scanner;
 
 /**
  * Google面试题：一个公司有新员工来报道时，要求将该员工的信息(id, gender, age, address)加入，当输入该员工的id时，要求查找到该员工的所有信息。<br>
@@ -18,9 +17,48 @@ public class HashTableDemo {
      * @param args
      */
     public static void main(String[] args) {
-        Hashtable hashtable = new Hashtable();
-        Employee employee = new Employee(0, "allwayz");
-        System.out.println();
+        HashTable hashtable = new HashTable(8);
+
+        String key = "";
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.println("=============================");
+            System.out.println("add: Add Employee");
+            System.out.println("list: Show Hashtable");
+            System.out.println("find: Find Node");
+            System.out.println("exit: Exit Application");
+
+            key = scanner.next();
+            switch (key) {
+                case "add":
+                    System.out.println("Enter ID");
+                    int id = scanner.nextInt();
+                    System.out.println("Enter Name");
+                    String name = scanner.next();
+                    Employee employee = new Employee(id, name);
+                    hashtable.add(employee);
+                    break;
+                case "list":
+                    hashtable.list();
+                    break;
+                case "find":
+                    id = scanner.nextInt();
+                    if (hashtable.find(id) == null){
+                        System.out.println("Node not found");
+                    }else {
+                        System.out.println(hashtable.find(id));
+                    }
+                    break;
+                case "exit":
+                    scanner.close();
+                    System.exit(0);
+                    break;
+                default:
+                    break;
+            }
+
+        }
+
     }
 }
 
@@ -48,7 +86,7 @@ class HashTable {
 
     public void list() {
         for (int i = 0; i < size; i++) {
-            employeeLinkedLists[i].list();
+            employeeLinkedLists[i].list(i);
         }
     }
 
@@ -100,16 +138,18 @@ class EmployeeLinkedList {
         temp.next = employee;
     }
 
-    public void list() {
+    public void list(int i) {
         if (head == null) {
-            System.out.println("LinkedList is Empty.");
+            System.out.println("No " + i + " LinkedList is Empty.");
             return;
         }
         Employee temp = head;
-        while (temp.next != null) {
-            temp.toString();
+        System.out.print("No "+i+": ");
+        while (temp != null) {
+            System.out.print(" => "+temp);
             temp = temp.next;
         }
+        System.out.println();
     }
 
     public Employee find(int id) {
@@ -118,13 +158,13 @@ class EmployeeLinkedList {
             return null;
         }
         Employee temp = head;
-        while (temp.next != null) {
+        while (temp != null) {
             if (temp.id == id) {
-                break;
+                return temp;
             }
             temp = temp.next;
         }
-        return temp;
+        return null;
     }
 
     public void delete(int id) {
