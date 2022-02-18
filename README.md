@@ -2,47 +2,120 @@
 ```shell
 .
 ├── Algorithm
-│   ├── PrimeNumber.java
+│   ├── PrimeNumber.class
 │   ├── search
-│   │   ├── BinarySearchDemo.java
-│   │   ├── FibonacciSearchDemo.java
-│   │   ├── InterpolationSearchDemo.java
-│   │   └── LinearSearchDemo.java
+│   │   ├── BinarySearchDemo.class
+│   │   ├── FibonacciSearchDemo.class
+│   │   ├── InterpolationSearchDemo.class
+│   │   └── LinearSearchDemo.class
 │   └── sort
-│       ├── BubbleSortDemo.java
-│       ├── InsertionSortDemo.java
-│       ├── MergeSortDemo.java
-│       ├── QuickSortDemo.java
-│       ├── RadixSortDemo.java
-│       ├── SelectSortDemo.java
-│       ├── ShellSortDemo.java
-│       └── SortAlgorithmStarter.java
+│       ├── BubbleSortDemo.class
+│       ├── InsertionSortDemo.class
+│       ├── MergeSortDemo.class
+│       ├── QuickSortDemo.class
+│       ├── RadixSortDemo.class
+│       ├── SelectSortDemo.class
+│       ├── ShellSortDemo.class
+│       └── SortAlgorithmStarter.class
 ├── DataStructures
 │   ├── HashTable
-│   │   └── HashTableDemo.java
+│   │   ├── Employee.class
+│   │   ├── EmployeeLinkedList.class
+│   │   ├── HashTable.class
+│   │   └── HashTableDemo.class
 │   ├── LinkedList
-│   │   ├── CircularLinkedListDemo.java
-│   │   ├── DoubleLinkedListDemo.java
-│   │   └── SingleLinkedListDemo.java
+│   │   ├── CircularLinkedList.class
+│   │   ├── CircularLinkedListDemo.class
+│   │   ├── CircularNode.class
+│   │   ├── DoubleLinkedList.class
+│   │   ├── DoubleLinkedListDemo.class
+│   │   ├── DoubleNode.class
+│   │   ├── LeetCode
+│   │   │   ├── ReverseLinkedList$ListNode.class
+│   │   │   └── ReverseLinkedList.class
+│   │   ├── SingleLinkedList.class
+│   │   ├── SingleLinkedListDemo.class
+│   │   └── SingleNode.class
 │   ├── Recursion
-│   │   ├── EightQueensDemo.java
-│   │   └── RecursionDemo.java
+│   │   ├── EightQueensDemo.class
+│   │   └── RecursionDemo.class
 │   ├── SparseArrayAndQueueDemo
-│   │   ├── ArrayQueueDemo.java
-│   │   ├── CircleArrayQueueDemo.java
-│   │   └── SparseArray.java
-│   └── Stack
-│       ├── ArrayStackDemo.java
-│       ├── Calculator.java
-│       ├── LinkedListStackDemo.java
-│       └── ReversePolandExpression.java
+│   │   ├── ArrayQueue.class
+│   │   ├── ArrayQueueDemo.class
+│   │   ├── CircleArrayQueue.class
+│   │   ├── CircleArrayQueueDemo.class
+│   │   └── SparseArray.class
+│   ├── Stack
+│   │   ├── ArrayStack.class
+│   │   ├── ArrayStackDemo.class
+│   │   ├── Calculator.class
+│   │   ├── LinkedListStack.class
+│   │   ├── LinkedListStackDemo.class
+│   │   ├── MyArrayStack.class
+│   │   ├── ReversePolandExpression.class
+│   │   └── StackNode.class
+│   └── Tree
+│       ├── BinaryTree.class
+│       ├── BinaryTreeDemo.class
+│       ├── Node.class
+│       └── TreeDemo.class
 ├── Fundamental
-│   └── Concept.java
+│   └── Concept.class
 ├── Learning
+│   ├── Competitions
+│   │   └── Competition1.class
 │   ├── Week1
-│   │   └── Exercise1.java
+│   │   ├── APIDemo.class
+│   │   ├── CMT219_Exercise_Set_1_Code
+│   │   │   ├── CastTest.class
+│   │   │   └── RewriteNumber.class
+│   │   ├── FloatingPointTest.class
+│   │   ├── LoopDemo.class
+│   │   ├── PrintStarRectangleDemo.class
+│   │   ├── PrintStarSquareDemo.class
+│   │   └── SquareRootDemo.class
 │   ├── Week2
-│   │   └── Exercise.java
+│   │   ├── ArrayDemo.class
+│   │   ├── ForEachDemo.class
+│   │   ├── ShowArgsDemo.class
+│   │   └── exercises2_code
+│   │       ├── BankAccount.class
+│   │       ├── BankTest.class
+│   │       └── CountNames.class
+│   ├── Week3
+│   │   ├── exercise_a
+│   │   │   ├── CharReaderDemo.class
+│   │   │   ├── FindDemo.class
+│   │   │   ├── OverLoadedDemo.class
+│   │   │   ├── ReverseInputsDemo.class
+│   │   │   └── exercises3a_code
+│   │   │       ├── Student.class
+│   │   │       ├── alphabet.txt
+│   │   │       └── bestpicturefilms.txt
+│   │   └── exercise_b
+│   │       ├── Carpets
+│   │       │   ├── CarpetDemo.class
+│   │       │   ├── RoomCarpet.class
+│   │       │   └── RoomDimension.class
+│   │       ├── Employee
+│   │       │   ├── Employee.class
+│   │       │   └── EmployeeDemo.class
+│   │       └── Vehicles
+│   │           ├── Person.class
+│   │           ├── Truck.class
+│   │           ├── Vehicle.class
+│   │           └── VehicleDemo.class
+│   ├── Week4
+│   │   ├── Lab4
+│   │   │   ├── Login.class
+│   │   │   ├── Section1.class
+│   │   │   ├── SortNumbers.class
+│   │   │   ├── User.class
+│   │   │   ├── marks
+│   │   │   ├── numbers
+│   │   │   └── users.txt
+│   │   └── examples
+│   │       └── ArraySort.class
 │   └── lastYearSource
 │       ├── 1.pdf
 │       ├── 2.pdf
@@ -50,7 +123,7 @@
 │       ├── 4.pdf
 │       └── 5.pdf
 └── MultiThread
-    └── ThreadDemo.java
+    └── ThreadDemo.class
 
 
 ```
