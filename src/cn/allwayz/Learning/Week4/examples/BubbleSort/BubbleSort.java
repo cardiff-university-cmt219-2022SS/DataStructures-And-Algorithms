@@ -3,6 +3,7 @@ package cn.allwayz.Learning.Week4.examples.BubbleSort;
 public class BubbleSort {
     public static void main(String[] args) {
         int marks[] = {23, 17, 59, 86, 10};
+
         System.out.println("Unsorted Array");
         System.out.println("--------------");
         for (int i = 0; i < marks.length; i++) {
