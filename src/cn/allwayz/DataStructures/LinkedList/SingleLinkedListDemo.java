@@ -209,7 +209,6 @@ class SingleLinkedList {
             current = next;
         }
         head.next = reverseHead.next;
-
     }
 
     /**

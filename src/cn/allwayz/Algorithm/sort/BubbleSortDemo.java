@@ -14,7 +14,7 @@ public class BubbleSortDemo {
         int[] array = {3, 9, -1, 10, -2};
         int[] arr = new int[80000];
         for (int i = 0; i < 80000; i++) {
-            arr[i] = (int)(Math.random() * 80000);
+            arr[i] = (int) (Math.random() * 80000);
         }
         long startTime = System.currentTimeMillis();
         bubbleSort(arr);
@@ -44,8 +44,6 @@ public class BubbleSortDemo {
                     array[index + 1] = pre;
                     flag = true;
                 }
-//                每排完一次，打印结果看一下
-//                System.out.println(Arrays.toString(array));
                 index++;
             }
             if (!flag) {

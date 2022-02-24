@@ -1,5 +1,8 @@
 package cn.allwayz.Learning.Week3.exercise_a.exercises3a_code;
 
+/**
+ * @author allwayz
+ */
 public class Student {
 
     private static int nextAvailableNumber = 0;
