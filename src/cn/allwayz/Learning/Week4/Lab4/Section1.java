@@ -1,6 +1,6 @@
 package cn.allwayz.Learning.Week4.Lab4;
 
-import java.util.Random;
+import java.util.SplittableRandom;
 
 /**
  * @author allwayz
@@ -8,10 +8,11 @@ import java.util.Random;
  */
 public class Section1 {
     public static void main(String[] args) {
-        Random random = new Random();
+        SplittableRandom random = new SplittableRandom();
         for (int i = 0; i < 16; i++) {
-            random = new Random();
-            int j = (random.nextInt(6 - 3) + 1) + 3;
+            random = new SplittableRandom();
+            int j = (random.nextInt(7 - 3) + 1) + 2;
+//            int j = random.nextInt(3,6);
             System.out.println(j);
         }
         System.out.println("=====================");

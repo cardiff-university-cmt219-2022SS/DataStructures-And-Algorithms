@@ -1,7 +1,5 @@
 package cn.allwayz.DataStructures.Tree;
 
-import java.util.List;
-
 /**
  * 1. 创建一颗二叉树
  *
@@ -30,12 +28,6 @@ public class BinaryTreeDemo {
         binaryTree.inOrder();
         System.out.println("=======================");
         binaryTree.postOrder();
-        System.out.println("=======================");
-        binaryTree.preOrderSearch(3);
-        binaryTree.inOrderSearch(3);
-        binaryTree.postOrderSearch(3);
-        System.out.println("=======================");
-
     }
 }
 
@@ -63,30 +55,6 @@ class BinaryTree {
     public void postOrder() {
         if (this.root != null) {
             this.root.postOrder();
-        }else {
-            System.out.println("Binary Tree is Empty");
-        }
-    }
-
-    public void preOrderSearch(int id){
-        if (this.root != null){
-            this.root.preOrderSearch(id);
-        }else {
-            System.out.println("Binary Tree is Empty");
-        }
-    }
-
-    public void inOrderSearch(int id){
-        if (this.root != null){
-            this.root.inOrderSearch(id);
-        }else {
-            System.out.println("Binary Tree is Empty");
-        }
-    }
-
-    public void postOrderSearch(int id){
-        if (this.root != null){
-            this.root.postOrderSearch(id);
         }else {
             System.out.println("Binary Tree is Empty");
         }
@@ -193,41 +161,5 @@ class Node {
         System.out.println(this);
     }
 
-    public void preOrderSearch(int id){
-        if (this.id == id){
-            System.out.println(this);
-        }else {
-            if (this.left != null){
-                this.left.preOrderSearch(id);
-            }
-            if (this.right != null){
-                this.right.preOrderSearch(id);
-            }
-        }
-    }
 
-    public void inOrderSearch(int id){
-        if (this.left != null){
-            this.left.inOrderSearch(id);
-        }
-        if (this.id == id){
-            System.out.println(this);
-        }else {
-            if (this.right != null){
-                this.right.inOrderSearch(id);
-            }
-        }
-    }
-
-    public void postOrderSearch(int id){
-        if (this.left != null){
-            this.left.postOrderSearch(id);
-        }
-        if (this.right != null){
-            this.right.postOrderSearch(id);
-        }
-        if (this.id == id){
-            System.out.println(this);
-        }
-    }
 }
