@@ -13,11 +13,14 @@ public class HorseRacing {
 
     public static void main(String[] args) throws InterruptedException, IOException {
         System.out.println("Start");
-        Runtime.getRuntime().exec("clear");
         for (int i = 0; i < 10; i++) {
             Horse horse = new Horse(i);
             horse.start();
         }
+        while (Thread.activeCount() > 2){
+            Thread.yield();
+        }
+        System.out.println("End");
 
     }
 }
