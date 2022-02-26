@@ -19,12 +19,14 @@ public class ConcurrentSort {
         long startTime = System.currentTimeMillis();
 //        bubbleSort(array);
 //        halvedBubbleSort(array);
-        concurrentBubbleSortByThreadPool(array, 2);
+        concurrentBubbleSort(array);
+//        concurrentBubbleSortByThreadPool(array, 2);
         while (Thread.activeCount() > 2) {
             Thread.yield();
         }
         long endTime = System.currentTimeMillis();
         System.out.println("Process Time： " + (endTime - startTime) + "ms");
+//        System.out.println(Arrays.toString(array));
 
     }
 
@@ -54,6 +56,19 @@ public class ConcurrentSort {
         int midIndex = array.length / 2;
         bubbleSort(Arrays.copyOfRange(array, 0, midIndex));
         bubbleSort(Arrays.copyOfRange(array, midIndex, array.length - 1));
+    }
+
+    public static void concurrentBubbleSort(int[] array) {
+        int midIndex = array.length / 2;
+        Thread t1 = new Thread(() -> {
+            bubbleSort(Arrays.copyOfRange(array, 0, midIndex));
+        });
+        Thread t2 = new Thread(() -> {
+            bubbleSort(Arrays.copyOfRange(array, midIndex, array.length - 1));
+        });
+
+        t1.start();
+        t2.start();
     }
 
     public static void concurrentBubbleSortByThreadPool(int[] array, int maxThread) {
