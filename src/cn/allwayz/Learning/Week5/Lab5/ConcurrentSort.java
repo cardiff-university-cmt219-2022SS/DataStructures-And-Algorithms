@@ -19,8 +19,8 @@ public class ConcurrentSort {
         long startTime = System.currentTimeMillis();
 //        bubbleSort(array);
 //        halvedBubbleSort(array);
-        concurrentBubbleSort(array);
-//        concurrentBubbleSortByThreadPool(array, 2);
+//        concurrentBubbleSort(array);
+        concurrentBubbleSortByThreadPool(array, 2);
         while (Thread.activeCount() > 2) {
             Thread.yield();
         }
