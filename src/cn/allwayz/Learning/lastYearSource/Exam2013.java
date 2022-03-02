@@ -12,8 +12,10 @@ public class Exam2013 {
         System.out.println(r2);
         int r3 = (i / 2) << 2;
         System.out.println(r3);
-        StringBuffer stringBuffer = new StringBuffer("11 3.7");
-        stringBuffer.replace(2,5,"***");
+        StringBuffer stringBuffer = new StringBuffer("19+");
+        stringBuffer.replace(2,5,"***")
+        ;System.out.println(stringBuffer);
+        stringBuffer.insert(1,"-");
         System.out.println(stringBuffer);
     }
 }
