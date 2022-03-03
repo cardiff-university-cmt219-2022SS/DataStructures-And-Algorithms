@@ -2,149 +2,145 @@
 ```shell
 .
 ├── Algorithm
-│   ├── PrimeNumber.class
+│   ├── PrimeNumber.java
 │   ├── search
-│   │   ├── BinarySearchDemo.class
-│   │   ├── FibonacciSearchDemo.class
-│   │   ├── InterpolationSearchDemo.class
-│   │   └── LinearSearchDemo.class
+│   │   ├── BinarySearchDemo.java
+│   │   ├── FibonacciSearchDemo.java
+│   │   ├── InterpolationSearchDemo.java
+│   │   └── LinearSearchDemo.java
 │   └── sort
-│       ├── BubbleSortDemo.class
-│       ├── InsertionSortDemo.class
-│       ├── MergeSortDemo.class
-│       ├── QuickSortDemo.class
-│       ├── RadixSortDemo.class
-│       ├── SelectSortDemo.class
-│       ├── ShellSortDemo.class
-│       └── SortAlgorithmStarter.class
+│       ├── BubbleSortDemo.java
+│       ├── InsertionSortDemo.java
+│       ├── MergeSortDemo.java
+│       ├── QuickSortDemo.java
+│       ├── RadixSortDemo.java
+│       ├── SelectSortDemo.java
+│       ├── ShellSortDemo.java
+│       └── SortAlgorithmStarter.java
 ├── DataStructures
 │   ├── HashTable
-│   │   ├── Employee.class
-│   │   ├── EmployeeLinkedList.class
-│   │   ├── HashTable.class
-│   │   └── HashTableDemo.class
+│   │   └── HashTableDemo.java
 │   ├── LinkedList
-│   │   ├── CircularLinkedList.class
-│   │   ├── CircularLinkedListDemo.class
-│   │   ├── CircularNode.class
-│   │   ├── DoubleLinkedList.class
-│   │   ├── DoubleLinkedListDemo.class
-│   │   ├── DoubleNode.class
+│   │   ├── CircularLinkedListDemo.java
+│   │   ├── DoubleLinkedListDemo.java
 │   │   ├── LeetCode
-│   │   │   ├── ReverseLinkedList$ListNode.class
-│   │   │   └── ReverseLinkedList.class
-│   │   ├── SingleLinkedList.class
-│   │   ├── SingleLinkedListDemo.class
-│   │   └── SingleNode.class
+│   │   │   └── ReverseLinkedList.java
+│   │   └── SingleLinkedListDemo.java
 │   ├── Recursion
-│   │   ├── EightQueensDemo.class
-│   │   └── RecursionDemo.class
+│   │   ├── EightQueensDemo.java
+│   │   └── RecursionDemo.java
 │   ├── SparseArrayAndQueueDemo
-│   │   ├── ArrayQueue.class
-│   │   ├── ArrayQueueDemo.class
-│   │   ├── CircleArrayQueue.class
-│   │   ├── CircleArrayQueueDemo.class
-│   │   └── SparseArray.class
+│   │   ├── ArrayQueueDemo.java
+│   │   ├── CircleArrayQueueDemo.java
+│   │   └── SparseArray.java
 │   ├── Stack
-│   │   ├── ArrayStack.class
-│   │   ├── ArrayStackDemo.class
-│   │   ├── Calculator.class
-│   │   ├── LinkedListStack.class
-│   │   ├── LinkedListStackDemo.class
-│   │   ├── MyArrayStack.class
-│   │   ├── ReversePolandExpression.class
-│   │   └── StackNode.class
+│   │   ├── ArrayStackDemo.java
+│   │   ├── Calculator.java
+│   │   ├── LinkedListStackDemo.java
+│   │   └── ReversePolandExpression.java
 │   └── Tree
-│       ├── BinaryTree.class
-│       ├── BinaryTreeDemo.class
-│       ├── Node.class
-│       └── TreeDemo.class
+│       └── BinaryTreeDemo.java
 ├── Fundamental
-│   └── Concept.class
+│   └── Concept.java
 ├── Learning
 │   ├── Competitions
-│   │   └── Competition1.class
+│   │   └── Competition1.java
 │   ├── Week1
-│   │   ├── APIDemo.class
+│   │   ├── APIDemo.java
 │   │   ├── CMT219_Exercise_Set_1_Code
-│   │   │   ├── CastTest.class
-│   │   │   └── RewriteNumber.class
-│   │   ├── FloatingPointTest.class
-│   │   ├── LoopDemo.class
-│   │   ├── PrintStarRectangleDemo.class
-│   │   ├── PrintStarSquareDemo.class
-│   │   └── SquareRootDemo.class
+│   │   │   ├── CastTest.java
+│   │   │   └── RewriteNumber.java
+│   │   ├── FloatingPointTest.java
+│   │   ├── LoopDemo.java
+│   │   ├── PrintStarRectangleDemo.java
+│   │   ├── PrintStarSquareDemo.java
+│   │   └── SquareRootDemo.java
 │   ├── Week2
-│   │   ├── ArrayDemo.class
-│   │   ├── ForEachDemo.class
-│   │   ├── ShowArgsDemo.class
+│   │   ├── ArrayDemo.java
+│   │   ├── ForEachDemo.java
+│   │   ├── ShowArgsDemo.java
 │   │   └── exercises2_code
-│   │       ├── BankAccount.class
-│   │       ├── BankTest.class
-│   │       └── CountNames.class
+│   │       ├── BankAccount.java
+│   │       ├── BankTest.java
+│   │       └── CountNames.java
 │   ├── Week3
 │   │   ├── exercise_a
-│   │   │   ├── CharReaderDemo.class
-│   │   │   ├── FindDemo.class
-│   │   │   ├── OverLoadedDemo.class
-│   │   │   ├── ReverseInputsDemo.class
+│   │   │   ├── CharReaderDemo.java
+│   │   │   ├── FindDemo.java
+│   │   │   ├── OverLoadedDemo.java
+│   │   │   ├── ReverseInputsDemo.java
 │   │   │   └── exercises3a_code
-│   │   │       ├── Student.class
+│   │   │       ├── Student.java
 │   │   │       ├── alphabet.txt
 │   │   │       └── bestpicturefilms.txt
 │   │   └── exercise_b
 │   │       ├── Carpets
-│   │       │   ├── CarpetDemo.class
-│   │       │   ├── RoomCarpet.class
-│   │       │   └── RoomDimension.class
+│   │       │   ├── CarpetDemo.java
+│   │       │   ├── RoomCarpet.java
+│   │       │   └── RoomDimension.java
 │   │       ├── Employee
-│   │       │   ├── Employee.class
-│   │       │   └── EmployeeDemo.class
+│   │       │   ├── Employee.java
+│   │       │   └── EmployeeDemo.java
 │   │       └── Vehicles
-│   │           ├── Person.class
-│   │           ├── Truck.class
-│   │           ├── Vehicle.class
-│   │           └── VehicleDemo.class
+│   │           ├── Person.java
+│   │           ├── Truck.java
+│   │           ├── Vehicle.java
+│   │           └── VehicleDemo.java
 │   ├── Week4
 │   │   ├── Lab4
-│   │   │   ├── Login.class
-│   │   │   ├── Section1.class
-│   │   │   ├── SortNumbers.class
-│   │   │   ├── User.class
+│   │   │   ├── Login.java
+│   │   │   ├── Section1.java
+│   │   │   ├── SortNumbers.java
 │   │   │   ├── marks
 │   │   │   ├── numbers
 │   │   │   └── users.txt
-│   │   ├── examples
-│   │   │   ├── ArraySort
-│   │   │   │   └── ArraySort.class
-│   │   │   ├── BubbleSort
-│   │   │   │   └── BubbleSort.class
-│   │   │   ├── BufferSize
-│   │   │   │   └── BufferSize.class
-│   │   │   ├── CollectionSort
-│   │   │   │   └── CollectionSort.class
-│   │   │   ├── ConcatPerf
-│   │   │   │   └── ConcatPerf.class
-│   │   │   ├── CreateBuffers
-│   │   │   │   └── CreateBuffers.class
-│   │   │   └── Factorial
-│   │   │       └── Factorial.class
 │   │   └── exercise
-│   │       ├── GenericsAndCollections.class
-│   │       ├── Mathematical.class
-│   │       ├── Sorting.class
-│   │       └── StringManipulation.class
+│   │       ├── GenericsAndCollections.java
+│   │       ├── Mathematical.java
+│   │       ├── Sorting.java
+│   │       └── StringManipulation.java
+│   ├── Week5
+│   │   ├── Exercise
+│   │   │   └── exercise.java
+│   │   └── Lab5
+│   │       ├── Buffer
+│   │       │   ├── Buffer.java
+│   │       │   ├── BufferDemo.java
+│   │       │   └── BufferDemo2.java
+│   │       ├── ConcurrentSort.java
+│   │       └── HorseRacing.java
 │   └── lastYearSource
 │       ├── 1.pdf
 │       ├── 2.pdf
 │       ├── 3.pdf
 │       ├── 4.pdf
-│       └── 5.pdf
+│       ├── 5.pdf
+│       ├── Exam2013
+│       │   ├── Q1
+│       │   │   ├── a.java
+│       │   │   ├── b.java
+│       │   │   └── e.java
+│       │   └── Q3
+│       │       ├── b.java
+│       │       └── document.txt
+│       ├── Exam2014
+│       │   └── Q1
+│       │       ├── a.java
+│       │       └── b.java
+│       ├── Exam2015
+│       │   └── Q1
+│       │       └── a.java
+│       ├── Exam2016
+│       │   └── Q1
+│       │       └── a.java
+│       ├── Exam2017
+│       │   └── Q1
+│       │       └── a.java
+│       └── Exam2018
+│           └── Q1
+│               └── a.java
 └── MultiThread
-    └── ThreadDemo.class
-
-
-
+    └── ThreadDemo.java
 ```
 
 ## Week 1
