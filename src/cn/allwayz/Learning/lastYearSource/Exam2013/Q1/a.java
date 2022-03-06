@@ -17,5 +17,6 @@ public class a {
         StringBuffer buffer = new StringBuffer(result4);
         buffer.replace(2, 5, "***");
         String result5 = buffer.toString();
+        System.out.println("sample".substring(2,4));
     }
 }

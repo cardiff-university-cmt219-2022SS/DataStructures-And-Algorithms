@@ -1,7 +1,7 @@
 package cn.allwayz.DataStructures.Tree;
 
 /**
- * 顺序存储二叉树，通常只考虑完全平和二叉树
+ * 顺序存储二叉树，通常只考虑完全平衡二叉树
  *
  * @author allwayz
  * @create 2022-03-04 08:16

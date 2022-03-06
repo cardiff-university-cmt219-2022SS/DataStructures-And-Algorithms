@@ -1,5 +1,7 @@
 package cn.allwayz.Learning.Week5.Lab5.Buffer;
 
+import static java.lang.Thread.sleep;
+
 /**
  * @author allwayz
  * @create 2022-02-26 01:05
@@ -25,7 +27,7 @@ public class Buffer {
         return (rear + 1) % BUFFER_SIZE == head;
     }
 
-    public synchronized void get() {
+    public void get() {
         if (isEmpty()) {
             System.out.println("Empty Buffer");
         } else {
@@ -36,7 +38,7 @@ public class Buffer {
         }
     }
 
-    public synchronized void put(int value) {
+    public void put(int value) {
         if (isFull()) {
             System.out.println("Full Buffer");
         } else {

@@ -20,7 +20,7 @@ public class ConcurrentSort {
 //        bubbleSort(array);
 //        halvedBubbleSort(array);
 //        concurrentBubbleSort(array);
-        concurrentBubbleSortByThreadPool(array, 2);
+        concurrentBubbleSortByThreadPool(array, 8);
         while (Thread.activeCount() > 2) {
             Thread.yield();
         }

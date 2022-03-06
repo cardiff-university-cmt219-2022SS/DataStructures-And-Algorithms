@@ -8,11 +8,11 @@ import java.util.Scanner;
  */
 public class BufferDemo {
     public static void main(String[] args) {
-        Buffer buffer = new Buffer(4);
+        Buffer buffer = new Buffer(5);
         Scanner scanner = new Scanner(System.in);
-        while (true){
+        while (true) {
             String key = scanner.nextLine();
-            switch (key){
+            switch (key) {
                 case "put":
                     int value = scanner.nextInt();
                     buffer.put(value);
@@ -30,19 +30,6 @@ public class BufferDemo {
                     break;
             }
         }
-//        Buffer buffer = new Buffer(10);
-//        for (int i = 0; i < 6; i++) {
-//            buffer.put(i+5);
-//        }
-//        buffer.showBuffer();
-//        for (int i = 0; i < 2; i++) {
-//            buffer.get();
-//        }
-//        buffer.showBuffer();
-//        for (int i = 0; i < 2; i++) {
-//            buffer.put(i+1);
-//        }
-//        buffer.showBuffer();
     }
 }
 
