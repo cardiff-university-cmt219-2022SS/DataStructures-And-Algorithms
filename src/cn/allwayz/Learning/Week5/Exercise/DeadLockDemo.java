@@ -1,11 +1,8 @@
 package cn.allwayz.Learning.Week5.Exercise;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
 import java.util.SplittableRandom;
-import java.util.Vector;
-import java.util.concurrent.CopyOnWriteArrayList;
-
-import static java.lang.Thread.sleep;
 
 /**
  * @author allwayz
@@ -13,39 +10,36 @@ import static java.lang.Thread.sleep;
  */
 public class DeadLockDemo {
     public static void main(String[] args) {
-        CopyOnWriteArrayList copyOnWriteArrayList = new CopyOnWriteArrayList();
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
-            Thread thread = new Thread() {
-                @Override
-                public void run() {
-                    SplittableRandom random = new SplittableRandom();
-                    arrayList.add(random.nextInt(1, 9));
-                    try {
-                        sleep(random.nextLong(600, 900));
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    System.out.println(Thread.currentThread().getName());
-                }
-            };
-            thread.start();
-            System.out.println(arrayList.toString());
+        SplittableRandom random = new SplittableRandom();
+        int[] array = new int[7];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(1, 20);
         }
+        System.out.println(Arrays.toString(array));
+        bubbleSort(array);
+    }
+
+    public static void bubbleSort(int[] array) {
+        boolean flag = true;
+        int count = 0;
+        for (int i = 0; i < array.length - 1; i++) {
+            int index = 0;
+            while (index + 1 < array.length - i) {
+                int pre = array[index];
+                int next = array[index + 1];
+                if (next < pre) {
+                    array[index] = next;
+                    array[index + 1] = pre;
+                    flag = false;
+                }
+                index++;
+            }
+            if (flag) {
+                break;
+            }
+            flag = true;
+            count ++;
+        }
+        System.out.println(Arrays.toString(array)+", "+count);
     }
 }
-
-//class MyThread extends Thread {
-//
-//    public MyThread(Object o) {
-//    }
-//
-//    @Override
-//    public void run() {
-//
-//    }
-//
-//    public void run(ArrayList<Integer> arrayList) throws InterruptedException {
-//
-//    }
-//}
