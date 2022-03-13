@@ -10,6 +10,8 @@ import java.util.SplittableRandom;
  */
 public class DeadLockDemo {
     public static void main(String[] args) {
+        Animal cat = new Cat("Kitty","Cat",30,1);
+        System.out.println(cat);
         SplittableRandom random = new SplittableRandom();
         int[] array = new int[7];
         for (int i = 0; i < array.length; i++) {
