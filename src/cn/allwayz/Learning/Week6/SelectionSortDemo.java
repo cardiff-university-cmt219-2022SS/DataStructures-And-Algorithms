@@ -1,6 +1,7 @@
 package cn.allwayz.Learning.Week6;
 
 import javax.naming.PartialResultException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.SplittableRandom;
 
@@ -10,6 +11,7 @@ import java.util.SplittableRandom;
  */
 public class SelectionSortDemo {
     public static void main(String[] args) {
+        ArrayList arrayList = new ArrayList();
         int[] array = new int[7];
         SplittableRandom splittableRandom = new SplittableRandom();
         for (int i = 0; i < array.length; i++) {
