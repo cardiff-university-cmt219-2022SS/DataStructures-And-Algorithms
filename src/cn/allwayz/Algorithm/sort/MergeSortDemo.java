@@ -13,11 +13,17 @@ import java.util.Arrays;
  * @create 2022-01-26 03:29
  */
 public class MergeSortDemo {
+    public static int c = 0;
+
     public static void main(String[] args) {
-        int[] array = {8, 4, 5, 7, 1, 3, 6, 2};
+        int[] array = {8, 4, 5, 7, 3, 1, 6, 2};
+//        int[] array = {3, 1, 8, 7, 6, 2, 4, 5};
+//        int[] array = {1, 2, 3, 4, 5, 6, 7, 8};
         int[] temp = new int[array.length];
         mergeSort(array, 0, array.length - 1, temp);
         System.out.println(Arrays.toString(array));
+
+        System.out.println(c);
     }
 
     /**
@@ -32,7 +38,7 @@ public class MergeSortDemo {
             int mid = (left + right) / 2;
             mergeSort(array, left, mid, temp);
             mergeSort(array, mid + 1, right, temp);
-            merge(array,left,mid,right,temp);
+            merge(array, left, mid, right, temp);
         }
         return array;
     }
@@ -68,6 +74,7 @@ public class MergeSortDemo {
         int t = i;
         //(1) 先把所有两边数据按照规则填充到temp数组，直到左右两边有一边处理完成
         while (i <= mid && j <= right) {
+            c++;
             if (array[i] <= array[j]) {
                 temp[t] = array[i];
                 t += 1;
@@ -95,7 +102,13 @@ public class MergeSortDemo {
             array[tempLeft] = temp[tempLeft];
             tempLeft++;
         }
-        System.out.println(Arrays.toString(temp)+Arrays.toString(array));
+//        System.out.println(Arrays.toString(temp)+Arrays.toString(array));
         return array;
+    }
+
+    public static boolean compareIgnoreLength(String pre, String next){
+        String[] array = {pre, next};
+        Arrays.sort(array);
+        return Arrays.equals(array, new String[]{pre, next});
     }
 }
